@@ -69,7 +69,7 @@ app.put("/movies/:movieId/", async (request, response) => {
     lead_actor= '${leadActor}'
     WHERE 
     movie_id=${movieId}`;
-  await database.run(DbQuery);
+  await database.run(Dbquery);
   response.send("Movie Details Updated");
 });
 app.delete("/movies/:movieId/", async (request, response) => {
